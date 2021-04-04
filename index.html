@@ -7,6 +7,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./css/style.css">
    <link rel="stylesheet" href="./css/menu.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
    <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"></script>
    <title>EcoFood</title>
 </head>
@@ -132,17 +134,19 @@
          <section class="subscribe">
             <h2>YOUR PERSONAL SALES GUIDE...</h2>
 
-            <form action="#" class="subscribe__form-subscribe">
-               <p>stay up to date with DISCOUNT...</p>
-               <input type="email" name="email" placeholder="Enter your email...">
-               <input class="subscribe__button button" type="button" value="Subscribe">
-            </form>
+            <div class="bg-subscribe tablet">
+               <form action="#" class="subscribe__form-subscribe">
+                  <p>stay up to date with DISCOUNT...</p>
+                  <input class="tablet" type="email" name="email" placeholder="Enter your email...">
+                  <input class="subscribe__button button" type="button" value="Subscribe">
+               </form>
+            </div>
 
          </section>
       </main>
       <footer>
          <section class="footer-news">
-            <article>
+            <article class="tablet">
                <h3>
                   <i class="fas fa-cubes"></i> Healing with Honey
                </h3>
@@ -150,7 +154,7 @@
                   Praesent vestiblum molestie lacus. Aenean nonummy hendrerit.
                </p>
             </article>
-            <article>
+            <article class="tablet">
                <h3>
                   <i class="fas fa-tree"></i> Honey for Your Body
                </h3>
@@ -158,7 +162,7 @@
                   Praesent vestiblum molestie lacus. Aenean nonummy hendrerit.
                </p>
             </article>
-            <article>
+            <article class="tablet">
                <h3>
                   <i class="fab fa-codepen"></i> Honey Recipes
                </h3>
@@ -169,19 +173,29 @@
          </section>
          <section class="footer-social">
             <article>
-               <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+               <a href="http://facebook.com" target="_blank">
+                  <div class="link-social tablet">
+                     <i class="fab fa-facebook-f"></i>
+                  </div>
+               </a>
             </article>
             <article>
-               <a href="http://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+               <a href="http://youtube.com" target="_blank">
+                  <div class="link-social tablet">
+                     <i class="fab fa-youtube"></i>
+                  </div>
+               </a>
             </article>
             <article>
-               <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+               <a href="https://www.instagram.com" target="_blank">
+                  <div class="link-social tablet">
+                     <i class="fab fa-instagram"></i>
+                  </div>
+               </a>
             </article>
          </section>
          <section class="footer-reserved">
-            <h4>
-               &copy; All rights reserved.
-            </h4>
+            &copy; All rights reserved.
          </section>
       </footer>
    </div>

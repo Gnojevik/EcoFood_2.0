@@ -33,7 +33,7 @@ body {
    width: 100%;
    font-size: 100%;
    line-height: 1;
-   font-size: 14px;
+   font-size: 16px;
    -ms-text-size-adjust: 100%;
    -moz-text-size-adjust: 100%;
    -webkit-text-size-adjust: 100%;
@@ -86,6 +86,7 @@ body {
    background-position: center;
    background-size: cover;
    background-attachment: fixed;
+   font-family: "New Tegomin", serif;
 }
 
 .container {
@@ -120,6 +121,7 @@ body {
    text-align: center;
 }
 .button {
+   font-size: 16px;
    background-color: #91ac27;
    color: white;
    padding: 10px;
@@ -127,7 +129,7 @@ body {
    transition: all 0.3s linear;
 }
 .button:hover {
-   background: #92ac27c6;
+   background: #92ac27;
    box-shadow: 5px 5px 10px gray, inset 0px 0px 5px gray;
    transition: all 0.3s linear;
 }
@@ -161,9 +163,11 @@ main {
    flex-wrap: wrap;
    justify-content: center;
 }
-.products > h2 {
+h2 {
    width: 100%;
-   margin-bottom: 30px;
+   margin-bottom: 10px;
+   font-size: 18px;
+   color: rgb(66, 64, 64);
 }
 
 .products__item {
@@ -173,6 +177,15 @@ main {
    margin: 10px;
 }
 
+.products__item > h3 {
+   font-size: 18px;
+}
+.products__item > p {
+   margin: 10px 0;
+}
+.add-to-card {
+   width: 90%;
+}
 .foto-product {
    overflow: hidden;
    display: flex;
@@ -186,6 +199,91 @@ main {
 .foto-product > img:hover {
    transform: scale(1.6);
    transition: all 0.5s linear;
+}
+.subscribe {
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: 20px;
+}
+.bg-subscribe {
+   width: 100%;
+   background: url("../img/main/subscribe/empty-bg.jpg") no-repeat;
+   background-size: cover;
+   padding: 50px 0;
+}
+.subscribe__form-subscribe {
+   display: flex;
+   flex-direction: column;
+   max-width: 50%;
+   margin: 0 auto;
+}
+.subscribe__form-subscribe > p {
+   color: white;
+   font-size: 28px;
+   font-weight: 700;
+}
+.subscribe__form-subscribe > input {
+   margin: 10px 0;
+}
+footer {
+   margin-top: 30px;
+}
+.footer-news {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+.footer-news > article {
+   max-width: 300px;
+   margin: 10px;
+   padding: 25px;
+}
+.footer-news > article > h3 {
+   font-size: 22px;
+   margin-bottom: 10px;
+}
+
+.footer-social {
+   display: flex;
+   justify-content: center;
+}
+.footer-social > article {
+   margin: 10px;
+}
+
+.link-social {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   width: 60px;
+   height: 60px;
+   text-align: center;
+   background: black;
+   font-size: 24px;
+}
+.footer-social > article > a:hover > .link-social {
+   color: black;
+   background: white;
+}
+.footer-reserved {
+   text-align: center;
+   margin: 10px 0;
+}
+
+/* зменшуєм відступи що не так страшно все скакало */
+@media only screen and (min-width: 2249px) {
+   .products__item {
+      flex: 0 0 23%;
+   }
+}
+/* зменшуєм відступи що не так страшно все скакало */
+@media only screen and (max-width: 975px) {
+   .container {
+      margin: 20px 3%;
+      background: white;
+      padding: 5px 10px;
+   }
 }
 /* tablet */
 @media only screen and (max-width: 899px) {
@@ -203,5 +301,19 @@ main {
    .header-top > article {
       margin-top: 15px;
       min-width: 236px;
+   }
+   .subscribe__form-subscribe > p {
+      font-size: 20px;
+   }
+   .subscribe__form-subscribe {
+      max-width: 80%;
+   }
+}
+/* зменшуєм відступи що не так страшно все скакало */
+@media only screen and (max-width: 450px) {
+   .container {
+      margin: 0;
+      background: white;
+      padding: 5px 10px;
    }
 }
