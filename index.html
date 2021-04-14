@@ -9,11 +9,11 @@
    <link rel="stylesheet" href="./css/menu.css">
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
-   <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"></script>
    <title>EcoFood</title>
 </head>
 
 <body>
+   <a id="buttonTop"><i class="fas fa-arrow-up"></i></a>
    <div class="container">
       <header>
          <section class="header-top">
@@ -22,11 +22,11 @@
             </a>
             <article class="tablet">
                <a href="./pages/login.html" class="button link-in-button">Log in</a>
-               <a href="#" class="cart">
+               <a href="#" id="show-card" class="cart">
                   Cart <i class="fas fa-shopping-bag"></i>
-                  <span>(0)</span>
+                  (<span id="count">0</span>)
                </a>
-               <button class="button">Clear card</button>
+               <button id="clearCard" class="button">Clear card</button>
             </article>
          </section>
          <nav id="menuToggle">
@@ -46,8 +46,8 @@
          <section class="carousel">
             <div class="tablet"><img src="./img/main/carousel/1.png" alt=""></div>
          </section>
-         <section class="products">
-            <h2>Most Popular Products</h2>
+         <section id="products" class="products">
+            <!-- <h2>Most Popular Products</h2>
 
             <article class="products__item tablet">
                <a href="./pages/product.html">
@@ -128,7 +128,7 @@
                <h3>Pumpkin</h3>
                <p>$3.3</p>
                <button class="add-to-card button">Add to card</button>
-            </article>
+            </article> -->
 
          </section>
          <section class="subscribe">
@@ -199,6 +199,10 @@
          </section>
       </footer>
    </div>
+
+   <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"></script>
+   <script defer src="./js/loadProducts.js"></script>
+   <script defer src="./js/functionality.js"></script>
 </body>
 
 </html>

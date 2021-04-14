@@ -1,0 +1,52 @@
+{
+	"products": [
+		{
+			"id": 1,
+			"name": "Lemon",
+			"price": 7.6,
+			"imgUrl": "./img/main/products/lemon.jpg"
+		},
+		{
+			"id": 2,
+			"name": "Cauliflower",
+			"price": 1.2,
+			"imgUrl": "./img/main/products/cauliflower.jpg"
+		},
+		{
+			"id": 3,
+			"name": "Corn",
+			"price": 2.0,
+			"imgUrl": "./img/main/products/corn.jpg"
+		},
+		{
+			"id": 4,
+			"name": "Cucamber",
+			"price": 4.5,
+			"imgUrl": "./img/main/products/cucamber.jpg"
+		},
+		{
+			"id": 5,
+			"name": "Kiwi",
+			"price": 10.0,
+			"imgUrl": "./img/main/products/kiwi.jpg"
+		},
+		{
+			"id": 6,
+			"name": "Lime",
+			"price": 9.6,
+			"imgUrl": "./img/main/products/lime.jpg"
+		},
+		{
+			"id": 7,
+			"name": "Peach",
+			"price": 15.5,
+			"imgUrl": "./img/main/products/peach.jpg"
+		},
+		{
+			"id": 8,
+			"name": "Pumpkin",
+			"price": 3.3,
+			"imgUrl": "./img/main/products/pumpkin.jpg"
+		}
+	]
+}
