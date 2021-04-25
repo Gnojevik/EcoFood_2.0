@@ -1,0 +1,31 @@
+.product-main {
+   display: flex;
+   margin-top: 20px;
+}
+.product-main #product {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.product-main h3 {
+   font-size: 24px;
+   margin: 10px 0;
+}
+
+.product-main p {
+   font-size: 16px;
+   margin: 10px 5px;
+}
+.product-main #product > h3 {
+   align-self: flex-start;
+}
+
+.product-main #product > article {
+   display: flex;
+   flex-direction: column;
+}
+
+#goBackButton {
+   margin-bottom: 20px;
+}

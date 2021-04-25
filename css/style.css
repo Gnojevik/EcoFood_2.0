@@ -154,15 +154,7 @@ main {
    display: flex;
    flex-direction: column;
 }
-.carousel img {
-   width: 100%;
-}
-.carousel > div {
-   margin: 25px auto;
-   padding: 25px 10px;
-   border-bottom: solid 2px rgba(149, 137, 137, 0.844);
-   border-top: solid 2px rgba(149, 137, 137, 0.844);
-}
+
 .products {
    display: flex;
    flex-wrap: wrap;

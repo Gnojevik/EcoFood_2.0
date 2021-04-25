@@ -7,6 +7,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./css/style.css">
    <link rel="stylesheet" href="./css/menu.css">
+   <link rel="stylesheet" href="./css/carousel.css">
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
    <title>EcoFood</title>
@@ -15,120 +16,40 @@
 <body>
    <a id="buttonTop"><i class="fas fa-arrow-up"></i></a>
    <div class="container">
-      <header>
-         <section class="header-top">
-            <a href="./index.html">
-               <div class="logo tablet"><img src="./img/header/logo.png" alt="logo"></div>
-            </a>
-            <article class="tablet">
-               <a href="./pages/login.html" class="button link-in-button">Log in</a>
-               <a href="#" id="show-card" class="cart">
-                  Cart <i class="fas fa-shopping-bag"></i>
-                  (<span id="count">0</span>)
-               </a>
-               <button id="clearCard" class="button">Clear card</button>
-            </article>
-         </section>
-         <nav id="menuToggle">
-            <input type="checkbox">
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul id="menu" class="tablet">
-               <li><a href="./index.html" class="menu__item">Home</a></li>
-               <li><a href="#" class="menu__item">Catalog</a></li>
-               <li><a href="#" class="menu__item">About us</a></li>
-               <li><a href="#" class="menu__item">Contact</a></li>
-            </ul>
-         </nav>
+      <header id="header">
+
       </header>
       <main>
          <section class="carousel">
-            <div class="tablet"><img src="./img/main/carousel/1.png" alt=""></div>
-         </section>
-         <section id="products" class="products">
-            <!-- <h2>Most Popular Products</h2>
+            <div class="tablet mySlides fade">
+               <div class="numbertext">1 / 3</div>
+               <img src="./img/main/carousel/1.png" alt="">
+               <div class="text">Caption Text</div>
+            </div>
 
-            <article class="products__item tablet">
-               <a href="./pages/product.html">
-                  <div class="foto-product">
-                     <img src="./img/main/products/lemon.jpg" alt="lemon">
-                  </div>
-               </a>
-               <h3>Lemon</h3>
-               <p>$7.6</p>
-               <button class="add-to-card button">Add to card</button>
-            </article>
-            <article class="products__item tablet">
-               <a href="./pages/product.html">
-                  <div class="foto-product">
-                     <img src="./img/main/products/cauliflower.jpg" alt="Cauliflower">
-                  </div>
-               </a>
-               <h3>Cauliflower</h3>
-               <p>$1.2</p>
-               <button class="add-to-card button">Add to card</button>
-            </article>
-            <article class="products__item tablet">
-               <a href="./pages/product.html">
-                  <div class="foto-product">
-                     <img src="./img/main/products/corn.jpg" alt="corn">
-                  </div>
-               </a>
-               <h3>Corn</h3>
-               <p>$2</p>
-               <button class="add-to-card button">Add to card</button>
-            </article>
-            <article class="products__item tablet">
-               <a href="./pages/product.html">
-                  <div class="foto-product">
-                     <img src="./img/main/products/cucumber.jpg" alt="cucumber">
-                  </div>
-               </a>
-               <h3>Cucumber</h3>
-               <p>$4.5</p>
-               <button class="add-to-card button">Add to card</button>
-            </article>
-            <article class="products__item tablet">
-               <a href="./pages/product.html">
-                  <div class="foto-product">
-                     <img src="./img/main/products/kiwi.jpg" alt="kiwi">
-                  </div>
-               </a>
-               <h3>Kiwi</h3>
-               <p>$10</p>
-               <button class="add-to-card button">Add to card</button>
-            </article>
-            <article class="products__item tablet">
-               <a href="./pages/product.html">
-                  <div class="foto-product">
-                     <img src="./img/main/products/lime.jpg" alt="lime">
-                  </div>
-               </a>
-               <h3>Lime</h3>
-               <p>$9.6</p>
-               <button class="add-to-card button">Add to card</button>
-            </article>
-            <article class="products__item tablet">
-               <a href="./pages/product.html">
-                  <div class="foto-product">
-                     <img src="./img/main/products/peach.jpg" alt="peach">
-                  </div>
-               </a>
-               <h3>Peach</h3>
-               <p>$15.5</p>
-               <button class="add-to-card button">Add to card</button>
-            </article>
-            <article class="products__item tablet">
-               <a href="./pages/product.html">
-                  <div class="foto-product">
-                     <img src="./img/main/products/pumpkin.jpg" alt="Pumpkin">
-                  </div>
-               </a>
-               <h3>Pumpkin</h3>
-               <p>$3.3</p>
-               <button class="add-to-card button">Add to card</button>
-            </article> -->
+            <div class="tablet mySlides fade">
+               <div class="numbertext">2 / 3</div>
+               <img src="./img/main/carousel/2.png" alt="">
+               <div class="text">Caption Text</div>
+            </div>
+            <div class="tablet mySlides fade">
+               <div class="numbertext">3 / 3</div>
+               <img src="./img/main/carousel/3.png" alt="">
+               <div class="text">Caption Text</div>
+            </div>
+            <!-- Next and previous buttons -->
+            <a id="nextClick" class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a id="nextClick" class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- The dots/circles -->
+            <span class="dots">
+               <button class="dot tablet" onclick="currentSlide(1)"></button>
+               <button class="dot tablet" onclick="currentSlide(2)"></button>
+               <button class="dot tablet" onclick="currentSlide(3)"></button>
+            </span>
+         </section>
+
+         <section id="products" class="products">
 
          </section>
          <section class="subscribe">
@@ -144,65 +65,19 @@
 
          </section>
       </main>
-      <footer>
-         <section class="footer-news">
-            <article class="tablet">
-               <h3>
-                  <i class="fas fa-cubes"></i> Healing with Honey
-               </h3>
-               <p>
-                  Praesent vestiblum molestie lacus. Aenean nonummy hendrerit.
-               </p>
-            </article>
-            <article class="tablet">
-               <h3>
-                  <i class="fas fa-tree"></i> Honey for Your Body
-               </h3>
-               <p>
-                  Praesent vestiblum molestie lacus. Aenean nonummy hendrerit.
-               </p>
-            </article>
-            <article class="tablet">
-               <h3>
-                  <i class="fab fa-codepen"></i> Honey Recipes
-               </h3>
-               <p>
-                  Praesent vestiblum molestie lacus. Aenean nonummy hendrerit.
-               </p>
-            </article>
-         </section>
-         <section class="footer-social">
-            <article>
-               <a href="http://facebook.com" target="_blank">
-                  <div class="link-social tablet">
-                     <i class="fab fa-facebook-f"></i>
-                  </div>
-               </a>
-            </article>
-            <article>
-               <a href="http://youtube.com" target="_blank">
-                  <div class="link-social tablet">
-                     <i class="fab fa-youtube"></i>
-                  </div>
-               </a>
-            </article>
-            <article>
-               <a href="https://www.instagram.com" target="_blank">
-                  <div class="link-social tablet">
-                     <i class="fab fa-instagram"></i>
-                  </div>
-               </a>
-            </article>
-         </section>
-         <section class="footer-reserved">
-            &copy; All rights reserved.
-         </section>
+      <footer id="footer">
+
       </footer>
    </div>
 
    <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"></script>
+   <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <script id="scripHeader" defer src="./js/headerAndFooter.js"></script>
+   <script id="functionality" defer src="./js/functionality.js"></script>
    <script defer src="./js/loadProducts.js"></script>
-   <script defer src="./js/functionality.js"></script>
+   <script defer src="./js/carousel.js"></script>
+
 </body>
 
 </html>
