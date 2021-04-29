@@ -1,7 +1,6 @@
-document.getElementById('scripHeader').onload = function () { functionality() }; // чекаєм поки прогрузиться хедер
 
 function functionality() {
-
+   console.log('functionality');
    let cart = [];
    let buttonsAddToCart = document.getElementsByClassName('add-to-card');
    let buttonClearcart = document.getElementById('clearCard');
@@ -141,5 +140,16 @@ function scrollTop(event) {
 
 // ======================================
 
+// ====== input focus =============
 
+let input = document.querySelector('input');
+
+input.onfocus = inputFocus;
+input.onblur = inputBlur;
+function inputBlur() {
+   input.style = 'box-shadow: 10px 10px 10px gray, inset 0px 0px 5px gray';
+}
+function inputFocus() {
+   input.style = 'box-shadow: inset aqua 0px 0px 10px,aqua 5px 5px 5px';
+}
 

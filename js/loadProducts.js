@@ -6,10 +6,13 @@ xhr.responseType = 'json';
 
 xhr.send();
 
+
 xhr.onload = function () {
    products(xhr.response);
    goToProduct();
    functionality();
+
+
 }
 
 function products(jsonObj) {
