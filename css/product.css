@@ -29,3 +29,10 @@
 #goBackButton {
    margin-bottom: 20px;
 }
+
+@media only screen and (max-width: 715px) {
+   .product-main > section {
+      flex-direction: column;
+      margin-top: 10px;
+   }
+}

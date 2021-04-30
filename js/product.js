@@ -14,7 +14,7 @@ window.onload = function () {
          }
       }
    }
-   console.log(queryString);
+
    if (queryString['productName'] && queryString['price']) {
       document.getElementById('product-name').innerText = queryString['productName']; //Lemon
       document.getElementById('product-img').src = `./img/main/products/${queryString['productName'].toLowerCase()}.jpg`; // img
