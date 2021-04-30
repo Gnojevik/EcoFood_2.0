@@ -19,29 +19,15 @@
       <header id="header">
       </header>
       <main class="product-main tablet">
-         <!-- <section id="oneProduct" class="one-Product tablet">
-            <a href="./index.html"><button class="button">Go Back</button></a>
-            <h2>cucumber</h2>
-            <div class="foto">
-               <img src="./img/main/products/cucumber.jpg" alt="cucumber">
-            </div>
-            <div class="price">
-               <p>Base price $5.00</p>
-               <p>Base price for variant $5.00</p>
-               <p>Sales price</p>
-               <p>$4.75</p>
-               <button class="add-to-card button">Add to card</button>
-            </div>
-         </section> -->
          <button id="goBackButton" class="button">Go Back</button>
          <section id="product">
             <h3 id="product-name"></h3>
             <img id="product-img" />
             <article>
-               <p>Base price $5.00</p>
-               <p>Base price for variant $5.00</p>
+               <p>Base price $<span id="price"></span></p>
+               <p>Base price for variant $<span id="price-variant"></span></p>
                <p><b><big>Sales price</big></b></p>
-               <p><b><big>$4.75</big></b></p>
+               <p><b><big>$<span id="sale"></span></big></b></p>
                <button class="add-to-card button">Add to Cart</button>
             </article>
          </section>

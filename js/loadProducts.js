@@ -40,11 +40,12 @@ function goToProduct() {
    let productImgArr = document.getElementsByClassName('foto-product');
 
    for (let index = 0; index < productImgArr.length; index++) {
-      productImgArr[index].addEventListener('click', goToProductDetails);
+      productImgArr[index].addEventListener('click', click => { let imgPrice = (productImgArr[index].parentNode.childNodes[2].innerText); goToProductDetails(click, imgPrice); });
+
    }
 
-   function goToProductDetails(event) {
+   function goToProductDetails(event, price) {
       let productName = event.target;
-      window.location = 'product.html?productName=' + productName.alt;
+      window.location = 'product.html?productName=' + productName.alt + '?price=' + price;
    }
 }

@@ -1,6 +1,5 @@
 
 function functionality() {
-   console.log('functionality');
    let cart = [];
    let buttonsAddToCart = document.getElementsByClassName('add-to-card');
    let buttonClearcart = document.getElementById('clearCard');
@@ -143,9 +142,10 @@ function scrollTop(event) {
 // ====== input focus =============
 
 let input = document.querySelector('input');
-
-input.onfocus = inputFocus;
-input.onblur = inputBlur;
+if (input) {
+   input.onfocus = inputFocus;
+   input.onblur = inputBlur;
+}
 function inputBlur() {
    input.style = 'box-shadow: 10px 10px 10px gray, inset 0px 0px 5px gray';
 }
