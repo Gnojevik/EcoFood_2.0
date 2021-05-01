@@ -3,11 +3,13 @@ function functionality() {
    let cart = [];
    let buttonsAddToCart = document.getElementsByClassName('add-to-card');
    let buttonClearcart = document.getElementById('clearCard');
+
    buttonClearcart.addEventListener('click', clearCart);
 
    for (let index = 0; index < buttonsAddToCart.length; index++) {
       buttonsAddToCart[index].addEventListener('click', addToCart);
    }
+
    // ============= функція додавання елементів в корзину =============
    function addToCart(event) {
       let count = document.getElementById('count');
@@ -46,6 +48,7 @@ function functionality() {
    let closeSpan = document.getElementsByClassName('close')[0];
 
    showCart.addEventListener('click', modalCart);
+
 
    function modalCart(event) {
       let str = '';
@@ -141,15 +144,11 @@ function scrollTop(event) {
 
 // ====== input focus =============
 
-let input = document.querySelector('input');
-if (input) {
-   input.onfocus = inputFocus;
-   input.onblur = inputBlur;
-}
-function inputBlur() {
-   input.style = 'box-shadow: 10px 10px 10px gray, inset 0px 0px 5px gray';
-}
-function inputFocus() {
-   input.style = 'box-shadow: inset aqua 0px 0px 10px,aqua 5px 5px 5px';
-}
+let input = document.querySelectorAll('input');
 
+for (let index = 0; index < input.length; index++) {
+   input[index].style = 'box-shadow: none';
+   input[index].addEventListener('focus', () => input[index].style = 'box-shadow: inset aqua 0px 0px 10px,aqua 5px 5px 5px');
+   input[index].addEventListener('blur', () => input[index].style = 'box-shadow: none');
+}
+// ==============================================

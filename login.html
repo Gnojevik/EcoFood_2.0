@@ -7,10 +7,10 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./css/style.css">
    <link rel="stylesheet" href="./css/menu.css">
-   <link rel="stylesheet" href="./css/product.css">
+   <link rel="stylesheet" href="./css/login.css">
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
-   <title>Product</title>
+   <title>login</title>
 </head>
 
 <body>
@@ -43,27 +43,25 @@
       <header id="header">
 
       </header>
-      <main class="product-main tablet">
+      <main class="tablet">
          <button id="goBackButton" class="button">Go Back</button>
-         <section id="product">
-            <!-- <h3 id="product-name"></h3>
-            <img id="product-img" />
-            <article>
-               <p>Base price $<span id="price"></span></p>
-               <p>Base price for variant $<span id="price-variant"></span></p>
-               <p><b><big>Sales price</big></b></p>
-               <p><b><big>$<span id="sale"></span></big></b></p>
-               <button class="add-to-card button">Add to Cart</button>
-            </article> -->
-         </section>
-         <section>
-            <h3>REVIEWS</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique beatae
-               tempora magnam enim ullam qui quidem quam mollitia,
-               dolor iste, eius voluptatem eligendi saepe. Ratione ipsum quaerat sunt atque
-               provident.
-            </p>
-         </section>
+         <form action="#">
+            <ul>
+               <li>
+                  <label for="name">Name:</label>
+                  <input class="tablet" type="text" id="name" name="user_name" placeholder="Enter your name...">
+               </li>
+               <li>
+                  <label for="mail">E-mail:</label>
+                  <input class="tablet" type="email" id="mail" name="user_mail" placeholder="Enter your email...">
+
+               </li>
+            </ul>
+
+
+         </form>
+         <button id="login" class="button">Log In</button>
+
       </main>
       <footer id="footer">
       </footer>
@@ -75,12 +73,7 @@
    <script id="scripHeader" src="./js/headerAndFooter.js"></script>
 
    <script id="functionality" src="./js/functionality.js"></script>
-   <script src="./js/product.js"></script>
-   <script src="./js/loadProducts.js"></script>
-
-
-
-
+   <script src="./js/login.js"></script>
 </body>
 
 </html>
