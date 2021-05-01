@@ -148,7 +148,7 @@ let input = document.querySelectorAll('input');
 
 for (let index = 0; index < input.length; index++) {
    input[index].style = 'box-shadow: none';
-   input[index].addEventListener('focus', () => input[index].style = 'box-shadow: inset aqua 0px 0px 10px,aqua 5px 5px 5px');
+   input[index].addEventListener('focus', () => input[index].style = 'box-shadow: inset aqua 0px 0px 10px');
    input[index].addEventListener('blur', () => input[index].style = 'box-shadow: none');
 }
 // ==============================================
